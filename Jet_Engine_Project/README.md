@@ -2,7 +2,7 @@
 **Project Type:** Propulsion Engineering / Data Analysis
 
 ## Overview
-This project analyzes static fire test data from a prototype turbojet to evaluate thrust efficiency and identify vibration resonance.
+This project analyses static fire synthetic test data from a prototype turbojet to evaluate thrust efficiency and identify vibration resonance.
 
 ## Key Outcomes
 * **Thrust Modeling:** Implemented a Power Law ($RPM^{3.5}$) model to estimate thrust based on sensor RPM data.
