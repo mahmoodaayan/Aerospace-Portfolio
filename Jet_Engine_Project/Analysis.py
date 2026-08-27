@@ -1,11 +1,11 @@
 """
 Project: Jet Engine Performance and Vibration Analysis Model  
-Aurthor: Aayan Mahmood 
+Author: Aayan Mahmood 
 Date: January 2026
 Description:    This script analyses static fire test data from 
 a turbojet engine. It ingests raw sensor telemetry to calculate 
 critical performance metrics and identify safety anomalies. 
-Dependancies:
+Dependencies:
 - Pandas 
 - NumPy
 - MatPlotLib
