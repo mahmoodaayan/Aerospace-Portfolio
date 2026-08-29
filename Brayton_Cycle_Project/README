@@ -1,0 +1,46 @@
+# Gas Turbine Brayton Cycle Model
+
+**Project Type:** Propulsion Engineering / Thermodynamic Analysis
+
+## Overview
+
+This project models the ideal Brayton cycle for a gas turbine, analysing 
+how pressure ratio affects thermal efficiency and specific net work output. 
+The model calculates temperature and work at each stage of the cycle 
+(compression, heat addition, expansion) and sweeps pressure ratio across a 
+realistic range (5–40) to identify performance trends relevant to real 
+turbofan engine design.
+
+## Key Outcomes
+
+- **Efficiency Trend:** Thermal efficiency rises from ~37% at a pressure 
+  ratio of 5 to ~65% at a pressure ratio of 40, with diminishing returns 
+  at higher pressure ratios — consistent with the ideal cycle efficiency 
+  relation η = 1 - (1/rp)^((γ-1)/γ).
+- **Specific Work Trade-off:** Specific net work peaks at ~476 kJ/kg 
+  around a pressure ratio of ~18–20, then declines at higher pressure 
+  ratios. This occurs because compressor work grows faster than turbine 
+  work at high pressure ratios, illustrating why real gas turbines don't 
+  simply maximise pressure ratio.
+- **Validation:** Results were checked against the analytical ideal-cycle 
+  efficiency formula to confirm the model's equations are correct.
+
+## Method
+
+The model uses isentropic compression/expansion relations to calculate 
+temperature at each of the four cycle stations (compressor inlet, 
+compressor outlet, turbine inlet, turbine outlet), then derives compressor 
+work, turbine work, net work, heat input, and thermal efficiency from 
+these temperatures. A cold-air-standard assumption is used (constant 
+specific heat cp = 1005 J/kg·K and γ = 1.4).
+
+## Technologies Used
+
+- **MATLAB:** Vectorised computation across a pressure ratio sweep, 
+  and visualisation using subplots.
+
+## Possible Extensions
+
+- Sweep turbine inlet temperature to show its effect on specific work.
+- Add compressor and turbine isentropic efficiencies to model a real 
+  (non-ideal) cycle and compare against the ideal case.
