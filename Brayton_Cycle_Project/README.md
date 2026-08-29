@@ -11,7 +11,7 @@ The model calculates temperature and work at each stage of the cycle
 realistic range (5–40) to identify performance trends relevant to real 
 turbofan engine design.
 
-![Efficiency and Specific Work vs Pressure Ratio](Brayton Proj.png)
+![Efficiency and Specific Work vs Pressure Ratio](Brayton_Proj.png)
 ## Key Outcomes
 
 - **Efficiency Trend:** Thermal efficiency rises from ~37% at a pressure 
